@@ -1,0 +1,99 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2f6; /* Slightly warmer background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Softer, more prominent shadow */
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50; /* Darker heading color */
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #34495e; /* Darker label color */
+    font-weight: 600; /* Bolder font-weight for labels */
+    font-size: 1.1em;
+}
+
+.form-group input[type="number"] {
+    width: calc(100% - 24px); /* Adjust width for new padding */
+    padding: 12px; /* Slightly reduced padding to balance with font size */
+    border: 1px solid #cdd4e0; /* Softer border color */
+    border-radius: 6px; /* Slightly more rounded input fields */
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+.form-group input[type="number"]::placeholder {
+    color: #95a5a6;
+}
+
+button {
+    background-color: #1e88e5; /* More vibrant blue button */
+    color: white;
+    padding: 14px 25px; /* Adjusted padding */
+    border: none;
+    border-radius: 6px; /* Slightly more rounded button */
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1565c0; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.message {
+    background-color: #d4edda; /* Lighter green background */
+    color: #155724;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px; /* Increased margin */
+    border: 1px solid #28a745;
+    font-size: 1.1em;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px; /* Increased margin */
+    border: 1px solid #dc3545;
+    font-size: 1.1em;
+}
+
+.prediction-result {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    padding: 18px;
+    border-radius: 6px;
+    margin-bottom: 20px; /* Increased margin */
+    font-size: 1.3em; /* Slightly larger font for result */
+    font-weight: bold;
+    border: 1px solid #117a8b;
+}

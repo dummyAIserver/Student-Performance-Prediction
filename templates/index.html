@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Performance Prediction</h1>
+        {% if message %}
+            <p class="message">{{ message }}</p>
+        {% endif %}
+
+        {% if error_message %}
+            <p class="error-message">{{ error_message }}</p>
+        {% endif %}
+
+        {% if prediction_result %}
+            <p class="prediction-result">{{ prediction_result }}</p>
+        {% endif %}
+
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="attendance">Attendance (%):</label>
+                <input type="number" id="attendance" name="attendance" placeholder="Enter attendance (0-100)" min="0" max="100" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="assignment">Assignment Marks (%):</label>
+                <input type="number" id="assignment" name="assignment" placeholder="Enter assignment marks (0-100)" min="0" max="100" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="internal">Internal Marks (%):</label>
+                <input type="number" id="internal" name="internal" placeholder="Enter internal marks (0-100)" min="0" max="100" step="0.1" required>
+            </div>
+            <button type="submit">Predict Final Marks</button>
+        </form>
+    </div>
+</body>
+</html>

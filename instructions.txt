@@ -4,8 +4,8 @@ This project is a Flask-based web application that predicts students’ final ma
 Follow the steps below to correctly set up and run the project.
 
 1. Clone the Repository
-git clone <your-repository-link>
-cd <project-folder>
+git clone <https://github.com/dummyAIserver/Student-Performance-Prediction.git>
+cd <Student-Performance-Prediction>
 
 2. Create a Virtual Environment
 On Windows:
